@@ -1,0 +1,12 @@
+name: C CI
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile
+        run: gcc -Wall -o student studentrecord2.c
+      - name: Run Tests
+        run: bash tests/run_tests.sh
+        
