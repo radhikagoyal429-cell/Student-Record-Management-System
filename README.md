@@ -1,32 +1,25 @@
 # Student Record Management System
 
-A simple C console application to manage student records.  
-Made as a C Programming Microproject at MITS Gwalior.
+![C CI](https://github.com/radhikagoyal429-cell/Student-Record-Management-System/actions/workflows/ci.yml/badge.svg)
+
+A simple and efficient Student Record Management System written in C. Manage student records easily - add, view, and search students with marks.
 
 ## Features
-- Add Student
-- Display All Students
-- Search Student by Roll No
-- Update Student
-- Delete Student
+- Add new student record (Roll No, Name,Branch, Marks)
+- View all student records
+- Search student by Roll No
+- Simple menu-driven interface
+- File handling for data persistence
 
-## Technology Used
-- Programming Language: C
-- Compiler: GCC
-- Data Storage: Binary File Handling
+## Tech Stack
+- **Language:** C
+- **Build:** GCC
+- **CI/CD:** GitHub Actions
+- **Containerization:** Docker
 
-## How to Run
-1. Open this folder in VS Code.
-2. Compile the code:
-   gcc studentrecord2.c -o studentrecord
-3. Run the program:
-   ./studentrecord
+## How to Run Locally
 
-## Files
-- studentrecord2.c - Main program
-- README.md - Project details
-- .gitignore - Files excluded from GitHub upload
-
-## Made By
-Radhika Goyal and Rashi Parihar  
-B.Tech CSE, 1st Year
+### Using GCC
+```bash
+gcc -Wall -o student studentrecord2.c
+./student
