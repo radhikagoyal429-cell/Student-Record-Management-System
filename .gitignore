@@ -1,0 +1,7 @@
+students.dat
+studentrecord
+studentrecord.exe
+*.exe
+*.o
+.vscode/
+
