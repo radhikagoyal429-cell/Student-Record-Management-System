@@ -2,12 +2,15 @@
 
 ![C CI](https://github.com/radhikagoyal429-cell/Student-Record-Management-System/actions/workflows/ci.yml/badge.svg)
 
-A simple and efficient Student Record Management System written in C. Manage student records easily - add, view, and search students with marks.
+A simple and efficient Student Record Management System written in C. Manage student records easily - add, view, search , update and delete students with marks.
 
 ## Features
 - Add new student record (Roll No, Name,Branch, Marks)
 - View all student records
 - Search student by Roll No
+- Update student Name and Marks
+- Delete student with backup safety 
+- Input Validation 
 - Simple menu-driven interface
 - File handling for data persistence
 
@@ -21,5 +24,10 @@ A simple and efficient Student Record Management System written in C. Manage stu
 
 ### Using GCC
 ```bash
-gcc -Wall -o student studentrecord2.c
-./student
+gcc -Wall -o newcode newcode.c -lm
+./newcode
+
+## Load Test - 5000 Records
+```bash
+gcc loadtest.c -o loadtest
+./loadtest
