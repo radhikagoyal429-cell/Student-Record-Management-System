@@ -6,10 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Compile
-         run: gcc -Wall -o newcode newcode.c -lm
+        run: gcc -Wall -o newcode newcode.c -lm
       - name: Run Tests
         run: bash tests/run_tests.sh
       - name: Run Load Test
-        run: | 
-        gcc -Wall -o loadtest loadtest.c
-          ./loadtest
+        run: gcc -Wall -o loadtest loadtest.c && ./loadtest
