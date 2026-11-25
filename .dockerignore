@@ -1,3 +1,6 @@
 .git
 .vscode
-studentrecord.exe
+.github
+tests
+*.exe
+README.md
